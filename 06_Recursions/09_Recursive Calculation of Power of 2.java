@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Solution {
+
+    static int powerOfTwo(int n) {
+        // Base case
+        if (n == 0) {
+            return 1;
+        }
+
+        // Recursive case
+        return 2 * powerOfTwo(n - 1);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        System.out.println(powerOfTwo(n));
+    }
+}
